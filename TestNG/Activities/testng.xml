@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FSTTestSuite" thread-count="4" parallel="classes">
+<!--	<groups>  Groups Control 
+		<run>
+			<include name="HeaderTests" />
+		</run>-->
+<!--	</groups>-->
+	<parameter name="username" value="admin" />
+	<parameter name="password" value="password" />
+	<test name="FSTActivities"> <!-- Test Classes -->
+		<classes>
+			<class name="Activities.Activity1" />
+			<class name="Activities.Activity2" />
+			<class name="Activities.Activity3" />
+			<class name="Activities.Activity4Demo1" />
+			<class name="Activities.Activity4Demo2" />
+			<class name="Activities.Activity5" />
+			<class name="Activities.Activity6" />
+			<class name="Activities.Activity7" />
+			<class name="Activities.Activity8" />
+			<class name="Activities.Activity9" />
+			<class name="Activities.Activity10" />
+		</classes>
+	</test>
+	
+</suite>
