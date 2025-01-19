@@ -29,9 +29,9 @@ public class CRM_Activity2 {
 //		Get the url of the header image.
 		WebElement headerImage = driver.findElement(By.xpath("//div/img"));
 //	Print the url to the console.
-		String actualUrl = headerImage.getAttribute("src");
-		System.out.println("The url in Image is : " + actualUrl);
-		String expectedUrl = "https://alchemy.hguy.co/crm/themes/default/images/company_logo.png?v=cK7kLsY0ftg72ZVHTYUT_g";
+		String actualUrl = headerImage.getDomAttribute("src");
+		//System.out.println("The url in Image is : " + actualUrl);
+		String expectedUrl = "themes/default/images/company_logo.png?v=cK7kLsY0ftg72ZVHTYUT_g";
 		Assert.assertEquals(actualUrl, expectedUrl);
 	}
 
