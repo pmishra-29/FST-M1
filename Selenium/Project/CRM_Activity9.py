@@ -34,8 +34,8 @@ with webdriver.Chrome() as driver:
     print("The first ten Leads names and users are : ")
     leadsNames = driver.find_elements(By.XPATH,"//table[@class='list view table-responsive']/tbody/tr/td[3]")
     leadsUsers = driver.find_elements(By.XPATH,"//table[@class='list view table-responsive']/tbody/tr/td[8]")
-    for x in range(1, 11, 1):
-        print(x,leadsNames[x].text,":",leadsUsers[x].text)
+    for x in range(0, 10, 1):
+        print(x+1,leadsNames[x].text,":",leadsUsers[x].text)
     
 #Close the browser
     driver.quit()
